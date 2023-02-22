@@ -15,6 +15,7 @@ os.makedirs(args.output, exist_ok=True)
 # 获取输入路径下的所有图片文件的文件名
 input_path = args.input
 file_names = os.listdir(input_path)
+file_names.sort()
 
 # 定义时间格式
 time_format = '%Y-%m-%d_%H-%M-%S'
