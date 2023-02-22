@@ -17,7 +17,7 @@
 3. 新建一个 cron 定时任务：`* * * * * /home/ubuntu/projects/timelapse/shot.sh >/dev/null 2>&1`。
 4. 等待一段时间，图片保存在 `/home/ubuntu/Pictures/timelapse/dorm-scene/$DAY`。
 5. 将图片下载到本地。
-6. 处理图片并合成视频：`conbine.sh dir`，其中 dir 替换成实际的图片文件夹。
+6. 处理图片并合成视频：`./conbine.sh dir`，其中 dir 替换成实际的图片文件夹。
 
 效果：
 TODO
