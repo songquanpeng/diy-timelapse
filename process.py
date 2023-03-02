@@ -46,4 +46,4 @@ for i, file_name in tqdm(enumerate(file_names), total=len(file_names)):
         output_path = os.path.join(args.output, new_file_name)
         image.save(output_path)
 
-print(f"重命名以及时间字母添加完成！")
+print(f"重命名以及时间字幕添加完成！")
