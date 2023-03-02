@@ -17,7 +17,7 @@
 3. 新建一个 cron 定时任务：`* * * * * /home/ubuntu/projects/timelapse/shot.sh >/dev/null 2>&1`。
 4. 等待一段时间，图片保存在 `/home/ubuntu/Pictures/timelapse/dorm-scene/$DAY`。
 5. 将图片下载到本地。
-6. 处理图片并合成视频：`./conbine.sh dir`，其中 dir 替换成实际的图片文件夹。
+6. 处理图片并合成视频：`./generate_video.sh dir`，其中 dir 替换成实际的图片文件夹。
 7. 生成视频封面：`python ./generate_cover.py`（需要首先在 cover 文件夹下放置两张图片，一张名称为 day.jpg，另一张名称为 night.jpg，合成的封面图在 cover 文件夹下）。
 
 效果：
@@ -37,6 +37,8 @@ TODO
 > 写一个 Python 脚本，脚本的输入是两张尺寸一致的图片，其把第一张图片的左半部分和第二张图片的右半部分合并起来，并保存合并后的文件。需要使用 argparse 允许用户选择文件路径。
 >
 > 你需要把第一张图片的左半部分和第二张右半部分合并起来，合并后的图片的尺寸与原尺寸一致。
+> 
+> 写一个 Python 脚本，其输入为一个路径，该路径下有一系列需要处理的图片，脚本需要给这些图片添加滤镜效果，具体而言，需要使天空更蓝，饱和度更高，输出处理后的图片到另一个指定目录
 
 
 ## 参考
